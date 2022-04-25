@@ -19,10 +19,9 @@ for iter = 1:num_iters
 
 
 
-
-
-
-
+    delta = X * theta - y;
+    deviation = X' * delta / m;
+    theta = theta - alpha * deviation;
 
 
 
